@@ -1,0 +1,78 @@
+[
+    {
+        "analyse": "glycemie",
+        "nombre_patients": 4,
+        "statistiques": {
+            "moyenne": 0.9850000000000001,
+            "minimale": 0.68,
+            "maximale": 1.25
+        },
+        "patients_hors_bornes": [
+            {
+                "id": "P002",
+                "glycemie": 1.25
+            },
+            {
+                "id": "P003",
+                "glycemie": 0.68
+            }
+        ]
+    },
+    {
+        "analyse": "creatinine",
+        "nombre_patients": 4,
+        "statistiques": {
+            "moyenne": 88.75,
+            "minimale": 75.0,
+            "maximale": 103.0
+        },
+        "patients_hors_bornes": [
+            {
+                "id": "P002",
+                "creatinine": 103.0
+            }
+        ]
+    },
+    {
+        "analyse": "uree",
+        "nombre_patients": 3,
+        "statistiques": {
+            "moyenne": 0.35000000000000003,
+            "minimale": 0.28,
+            "maximale": 0.42
+        },
+        "patients_hors_bornes": [
+            {
+                "id": "P001",
+                "uree": 0.35
+            },
+            {
+                "id": "P002",
+                "uree": 0.42
+            },
+            {
+                "id": "P003",
+                "uree": 0.28
+            }
+        ]
+    },
+    {
+        "analyse": "ldh",
+        "nombre_patients": 3,
+        "statistiques": {
+            "moyenne": 170.0,
+            "minimale": 87.0,
+            "maximale": 267.0
+        },
+        "patients_hors_bornes": [
+            {
+                "id": "P003",
+                "ldh": 87.0
+            },
+            {
+                "id": "P004",
+                "ldh": 267.0
+            }
+        ]
+    }
+]
