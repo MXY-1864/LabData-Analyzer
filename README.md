@@ -8,3 +8,9 @@ Features
 - Calculate statistics
 - Detect out-of-range values
 - Export reports to JSON
+
+Future Improvements
+
+- Add input data validation
+- Improve error handling
+- Add automated tests
