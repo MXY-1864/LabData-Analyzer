@@ -5,7 +5,8 @@
         "statistiques": {
             "moyenne": 0.9850000000000001,
             "minimale": 0.68,
-            "maximale": 1.25
+            "maximale": 1.25,
+            "ecart_type": 0.24392621835300934
         },
         "patients_hors_bornes": [
             {
@@ -24,7 +25,8 @@
         "statistiques": {
             "moyenne": 88.75,
             "minimale": 75.0,
-            "maximale": 103.0
+            "maximale": 103.0,
+            "ecart_type": 13.817259737975062
         },
         "patients_hors_bornes": [
             {
@@ -37,9 +39,10 @@
         "analyse": "uree",
         "nombre_patients": 3,
         "statistiques": {
-            "moyenne": 0.35000000000000003,
+            "moyenne": 0.35,
             "minimale": 0.28,
-            "maximale": 0.42
+            "maximale": 0.42,
+            "ecart_type": 0.06999999999999998
         },
         "patients_hors_bornes": [
             {
@@ -62,7 +65,8 @@
         "statistiques": {
             "moyenne": 170.0,
             "minimale": 87.0,
-            "maximale": 267.0
+            "maximale": 267.0,
+            "ecart_type": 90.8129946648606
         },
         "patients_hors_bornes": [
             {
