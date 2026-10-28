@@ -1,6 +1,7 @@
 from pprint import pprint
 import csv
 import json
+import statistics
 #import sys
 
 analyses = [
@@ -30,16 +31,25 @@ def calculate_stats(patients, analyse):
         if patient[analyse] is not None:
             values.append(patient[analyse])
    
-    if len(values) > 0:
-        average = sum(values) / len(values)
-        min_value = min(values)
-        max_value = max(values)
-    else: 
+    
+    if len(values) == 0:
         return None
 
-    analyse_stats = dict(moyenne=average, minimale=min_value, maximale=max_value)
-    
-    return analyse_stats
+    average = statistics.mean(values)
+    min_value = min(values)
+    max_value = max(values)
+
+    if len(values) >= 2:
+        ecart_type = statistics.stdev(values)
+    else:
+        ecart_type = None
+
+    return {
+        "moyenne": average,
+        "minimale": min_value,
+        "maximale": max_value,
+        "ecart_type": ecart_type
+    }
 
 
 def detect_outliers(patients, analyse, lower_limit, upper_limit):
