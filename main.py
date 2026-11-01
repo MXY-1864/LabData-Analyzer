@@ -25,12 +25,16 @@ def read_file (file_to_read):
                         patient[test] = None
     return list_of_data
 
-def calculate_stats(patients, analyse):
+def extract_values(patients, analyse):
     values = []
     for patient in patients:
         if patient[analyse] is not None:
             values.append(patient[analyse])
-   
+    return values
+
+def calculate_stats(patients, analyse):
+    """Retourne les valeurs non None de l'analyse demandée."""
+    values = extract_values(patients, analyse)
     
     if len(values) == 0:
         return None
